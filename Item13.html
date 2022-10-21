@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/Common.css">
+    <link rel="stylesheet" href="styles/Item13.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastrar Alunos</h1>
+        <div class="formContainer">
+            <label for="Nome">Nome</label>
+            <input class="inputPadrao" type="text" name="Nome" id="Nome" placeholder="Insira o nome do aluno">
+        </div>
+        <div class="formContainer">
+            <label for="Nota1">Nota 1</label>
+            <input class="inputPadrao" type="number" name="Nota1" id="Nota1" placeholder="Insira a nota 1">
+        </div>
+        <div class="formContainer">
+            <label for="Nota1">Nota 2</label>
+            <input class="inputPadrao" type="number" name="Nota2" id="Nota2" placeholder="Insira a nota 2">
+        </div>
+        <div class="formContainer">
+            <label>Gênero</label>
+
+            <div class="inputRadioGroup">
+                <input class="inputPadrao" type="radio" name="genero" value="M" id="masculino"> <label
+                    for="masculino">Masculino</label>
+            </div>
+            <div class="inputRadioGroup">
+                <input class="inputPadrao" type="radio" name="genero" value="F" id="Feminino"> <label
+                    for="feminino">Feminino</label>
+            </div>
+        </div>
+        <button class="btnSalvar">Salvar</button>
+
+        <h1>Alunos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vinicius</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>Aprovado</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Relatório</h1>
+
+        <div class="row">
+            <div class="col m-1 bg-light rounded p-2">
+                <h3>Total de Homens</h3>
+                <p>10</p>
+            </div>
+            <div class="col m-1 bg-light rounded p-2">
+                <h3>Total de Mulheres</h3>
+                <p>10</p>
+            </div>
+            <div class="col m-1 bg-light rounded p-2">
+                <h3>Percentual de Homens</h3>
+                <p>50 %</p>
+            </div>
+            <div class="col m-1 bg-light rounded p-2">
+                <h3>Percentual de Mulheres</h3>
+                <p>50 %</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m-1 bg-light rounded p-2">
+                <h3>Aprovados</h3>
+                <p>Total : 10</p>
+                <p>Percentual : 50%</p>
+            </div>
+            <div class="col m-1 bg-light rounded p-2">
+                <h3>Reprovados</h3>
+                <p>Total : 10</p>
+                <p>Percentual : 50%</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m-1 bg-light rounded p-2">
+                <h3>Melhores alunos</h3>
+                <p>Média : 10</p>
+                <ul class="list-group ">
+                    <li class="list-group-item ">Vinicius</li>
+                    <li class="list-group-item">Ana</li>
+                </ul>
+     
+            </div>
+        </div>
+
+    </div>
+
+</body>

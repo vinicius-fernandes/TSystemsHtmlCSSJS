@@ -1,0 +1,21 @@
+
+.cardapio{
+    background-color: rgb(255, 208, 193);
+    border-radius: 10px;
+    padding:10px;
+}
+
+.tituloCardapio{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.totalItens{
+    background-color: rgb(212, 212, 212);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
