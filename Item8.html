@@ -10,34 +10,40 @@
 <body>
     <div class="container">
         <h1>Conversão de horário</h1>
-    <input class="inputPadrao" type="time" name="" id="" placeholder="Insira um horário">
+    <!-- <input class="inputPadrao" type="time" name="" id="" placeholder="Insira um horário"> -->
     <div class="inputRadioGroup">
 
-        <input class="inputPadrao" type="radio" name="timezone" value="Lisboa" id="Lisboa"> <label
+        <input class="inputPadrao" type="radio" name="timezone" value="0" id="Lisboa"> <label
             for="Lisboa">Lisboa</label>
     </div>
     <div class="inputRadioGroup">
 
-        <input class="inputPadrao" type="radio" name="timezone" value="NovaIorque" id="NovaIorque"> <label
+        <input class="inputPadrao" type="radio" name="timezone" value="1" id="NovaIorque"> <label
             for="NovaIorque">Nova Iorque</label>
     </div>
     <div class="inputRadioGroup">
 
-        <input class="inputPadrao" type="radio" name="timezone" value="Cidade do México" id="CidadeDoMexico"> <label
+        <input class="inputPadrao" type="radio" name="timezone" value="2" id="CidadeDoMexico"> <label
             for="CidadeDoMexico">Cidade do México</label>
     </div>
     <div class="inputRadioGroup">
 
-        <input class="inputPadrao" type="radio" name="timezone" value="Tóquio" id="Toquio"> <label
+        <input class="inputPadrao" type="radio" name="timezone" value="3" id="Toquio"> <label
             for="Toquio">Tóquio</label>
     </div>
     <div class="inputRadioGroup">
 
-        <input class="inputPadrao" type="radio" name="timezone" value="Berlim" id="Berlim"> <label
+        <input class="inputPadrao" type="radio" name="timezone" value="4" id="Berlim"> <label
             for="Berlim">Berlim</label>
     </div>
     
-    <button class="btnSalvar">Salvar</button>
+    <button class="btnSalvar" id="btnConverter">Converter</button>
+
+
+    <p>Horário local: <label id="displayHorarioLocal"></label></p>
+    <p>Horário convertido: <label id="displayHorarioConvertido"></label></p>
+
+    <script src="scripts/item8.js"></script>
 </div>
 </body>
 </html>

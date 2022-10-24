@@ -11,39 +11,41 @@
 
 <body>
     <div class="container">
-        <input class="inputPadrao" type="number" name="" id="" placeholder="Insira um número">
+        <input class="inputPadrao" type="number" name="" id="valorParaConverter" placeholder="Insira um número">
         <div class="inputRadioGroup">
-            <input class="inputPadrao" type="radio" name="conversao" value="DolarReal" id="DolarReal"> <label
+            <input class="inputPadrao" type="radio" name="conversao" value="0" id="DolarReal"> <label
                 for="aPrazo">Dólar para Real</label>
         </div>
         <div class="inputRadioGroup">
 
-            <input class="inputPadrao" type="radio" name="conversao" value="RealDolar" id="RealDolar"> <label
+            <input class="inputPadrao" type="radio" name="conversao" value="1" id="RealDolar"> <label
                 for="aVista">Real para Dólar</label>
         </div>
         <div class="inputRadioGroup">
 
-            <input class="inputPadrao" type="radio" name="conversao" value="EuroReal" id="EuroReal">
+            <input class="inputPadrao" type="radio" name="conversao" value="2" id="EuroReal">
             <label for="aVista">Euro para Real</label>
         </div>
         <div class="inputRadioGroup">
 
-            <input class="inputPadrao" type="radio" name="conversao" value="RealEuro" id="RealEuro">
+            <input class="inputPadrao" type="radio" name="conversao" value="3" id="RealEuro">
             <label for="aVista">Real para Euro</label>
         </div>
         <div class="inputRadioGroup">
 
-            <input class="inputPadrao" type="radio" name="conversao" value="libraReal" id="libraReal">
+            <input class="inputPadrao" type="radio" name="conversao" value="4" id="libraReal">
             <label for="aVista">Libra para Real</label>
         </div>
         <div class="inputRadioGroup">
 
-            <input class="inputPadrao" type="radio" name="conversao" value="RealLibra" id="RealLibra">
+            <input class="inputPadrao" type="radio" name="conversao" value="5" id="RealLibra">
             <label for="aVista">Real para Libra</label>
         </div>
-        <button class="btnSalvar">Converter</button>
+       <p> Valor convertido : <label id="convertido"></label> </p>
+        <button class="btnSalvar" id="btnConverter">Converter</button>
 
     </div>
+    <script src="scripts/item5.js"></script>
 </body>
 
 </html>
