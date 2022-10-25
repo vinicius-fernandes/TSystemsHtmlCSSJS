@@ -39,7 +39,8 @@
                     for="feminino">Feminino</label>
             </div>
         </div>
-        <button class="btnSalvar">Salvar</button>
+        <p class="text-danger d-none" id="msgErro"></p>
+        <button class="btnSalvar" id="btnSalvar">Salvar</button>
 
         <h1>Alunos</h1>
         <table>
@@ -50,15 +51,12 @@
                     <th>Nota 2</th>
                     <th>Média</th>
                     <th>Situação</th>
+                    <th>Gênero</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="bodyAlunos">
                 <tr>
-                    <td>Vinicius</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>Aprovado</td>
+    
                 </tr>
             </tbody>
         </table>
@@ -68,45 +66,49 @@
         <div class="row">
             <div class="col m-1 bg-light rounded p-2">
                 <h3>Total de Homens</h3>
-                <p>10</p>
+                <p id="totalHomens"></p>
             </div>
             <div class="col m-1 bg-light rounded p-2">
                 <h3>Total de Mulheres</h3>
-                <p>10</p>
+                <p id="totalMulheres"></p>
             </div>
             <div class="col m-1 bg-light rounded p-2">
                 <h3>Percentual de Homens</h3>
-                <p>50 %</p>
+                <p id="percentualHomens"></p>
             </div>
             <div class="col m-1 bg-light rounded p-2">
                 <h3>Percentual de Mulheres</h3>
-                <p>50 %</p>
+                <p id="percentualMulheres"></p>
             </div>
         </div>
         <div class="row">
             <div class="col m-1 bg-light rounded p-2">
                 <h3>Aprovados</h3>
-                <p>Total : 10</p>
-                <p>Percentual : 50%</p>
+                <p>Total : <label id="totalAprovados"></label></p>
+                <p>Percentual : <label id="percentualAprovados"></label> %</p>
             </div>
             <div class="col m-1 bg-light rounded p-2">
                 <h3>Reprovados</h3>
-                <p>Total : 10</p>
-                <p>Percentual : 50%</p>
+                <p>Total : <label id="totalReprovados"></label></p>
+                <p>Percentual : <label id="percentualReprovados"></label>%</p>
+            </div>
+            <div class="col m-1 bg-light rounded p-2">
+                <h3>Recuperacao</h3>
+                <p>Total : <label id="totalRecuperacao"></label></p>
+                <p>Percentual : <label id="percentualRecuperacao"></label>%</p>
             </div>
         </div>
         <div class="row">
             <div class="col m-1 bg-light rounded p-2">
                 <h3>Melhores alunos</h3>
-                <p>Média : 10</p>
-                <ul class="list-group ">
-                    <li class="list-group-item ">Vinicius</li>
-                    <li class="list-group-item">Ana</li>
+                <p></p>
+                <ul class="list-group" id="melhoresAlunos">
+
                 </ul>
      
             </div>
         </div>
 
     </div>
-
+    <script src="scripts/item13.js"></script>
 </body>
