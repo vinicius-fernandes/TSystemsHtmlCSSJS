@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container-fluid vh-100 bg-light">
-        <div class="row justify-content-center align-items-center g-2">
+        <div class="row justify-content-center align-items-center g-2" id="login">
             <div class="col-6 m-5">
                 <h1>Login</h1>
                 <div class="mb-3">
@@ -22,17 +22,20 @@
                   <label for="senha" class="form-label">Senha</label>
                   <input type="password" class="form-control" name="" id="senha" placeholder="Digite sua senha">
                 </div>
-                <button type="button" class="btn btn-success">Acessar</button>
+                <p class="text-danger d-none" id="msgErro"></p>
+                <button type="button" class="btn btn-success" id="btnLogin">Acessar</button>
                 
             </div>
-            <div class="row justify-content-center align-items-center g-2">
-                <div class="col-6">
-                    <h1>Bem vindo ao painel administrativo</h1>
-                    </div>
-  
-            </div>
+ 
        
         </div>
+        <div class="row justify-content-center align-items-center g-2 d-none" id="painelAdmin">
+            <div class="col-6">
+                <h1>Bem vindo ao painel administrativo</h1>
+                </div>
+
+        </div>
     </div>
+    <script src="scripts/item14.js"></script>
 </body>
 </html>
