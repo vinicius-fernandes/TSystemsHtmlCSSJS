@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/Common.css">
+
 </head>
 <body>
     <div class="container">
@@ -14,10 +15,11 @@
         <input class="inputPadrao"type="text" name="Marca" id="Marca" placeholder="Insira a marca do produto">
         <input class="inputPadrao" type="number" name="Valor" id="Valor" placeholder="Insira o valor do produto">
     
-        <button class="btnSalvar">Salvar</button>
+        <button class="btnSalvar" id="btnSalvar">Salvar</button>
 
 
         <h1>Produtos cadastrados</h1>
+
         <table>
             <thead>
                 <tr>
@@ -32,7 +34,7 @@
                     </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="bodyProdutos">
                 <tr>
                     <td>Teste</td>
                     <td>Teste</td>
@@ -56,13 +58,12 @@
 
                     </td>
                     <th>Total cadastrado</th>
-                    <th>3</td>
+                    <th id="totalCadastrado">3</th>
                 </tr>
             </tfoot>
         </table>
 
     </div>
-    
-   
+<script src="scripts/item11.js"></script>   
 </body>
 </html>
