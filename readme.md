@@ -19,7 +19,7 @@ uma cidade, irá exibir uma breve descrição.
 
 4. Utilizando checkbox, crie dez itens de uma lanchonete. Haverá um elemento HTML
 de texto como: p ou h1 onde será exibido o total dos itens selecionados (essa
-função de contabilização será feita futuramente via JS).
+função de contabilização será feita futuramente via JS)..
 
 5. Implemente um formulário contendo um campo numérico e alguns radio contendo o
 tipo de conversão monetária:
