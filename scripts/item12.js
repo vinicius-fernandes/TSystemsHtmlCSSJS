@@ -109,6 +109,7 @@ function removerContato(id) {
 
     const tr = document.getElementById(`contato-${id}`)
     tr.remove()
+    setAniversariantes()
 }
 
 
