@@ -102,11 +102,11 @@ function popularTabela() {
 
 function getHomens(){
 
-    return alunos.filter(a=>a.genero=='H')
+    return alunos.filter(a=>a.genero=='M')
 }
 
 function getMulheres(){
-    return alunos.filter(a=>a.genero=='M')
+    return alunos.filter(a=>a.genero=='F')
 
 }
 
@@ -125,7 +125,7 @@ function getReprovados(){
 function getRecuperacao(){
     return alunos.filter((a=>{
         const media = (a.nota1+a.nota2)/2
-        return media>notaReprovado && a.media<notaAprovado
+        return media>notaReprovado && media<notaAprovado
     }))
 }
 
